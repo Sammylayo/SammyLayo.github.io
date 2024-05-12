@@ -148,57 +148,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Grid</title>
     <style>
         /* CSS for styling the grid */
+        .grid-scrollable {
+            max-width: 100%; /* Ensure the scrollable div takes the full width */
+            overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+        }
+    
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
+    
         .certification {
             text-align: center;
         }
+    
         .certification img {
             max-width: 100%;
             height: auto;
         }
     </style>
-</head>
-<body>
-    <div class="grid-container">
-        <div class="certification">
-            <h3>SQL for Data Analysis</h2>
-                <br>
-
-            <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_SQL%20for%20Data%20Analysis.pdf">
-                <img src="images/SQL for Data Analysis.png" alt="Google Analytics Individual Qualification">
-            </a>
-        </div>
-        <div class="certification">
-            <h3>Basics of Data Visualization Analysis</h2>
-            <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Basics%20of%20Data%20Visualization%20Analysis%20(1).pdf">
-                <img src="images/Basics of Data Visualization Analysis.png" alt="Certified Web Developer">
-            </a>
-        </div>
-        <div class="certification">
-            <h3>Data Analytics for Business Professionals</h2>
-            <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Data%20Analytics%20for%20Business%20Professionals%20(1).pdf">
-                <img src="images/Data Analytics for Business Professionals.png" alt="Microsoft Certified: Azure Fundamentals">
-            </a>
-        </div>
-        <div class="certification">
-            <h3>Excel and ChatGPT- Data Analysis</h2>
-                <br>
-            <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Excel%20and%20ChatGPT%20Data%20Analysis%20Power%20Tips.pdf">
-                <img src="images/Excel and ChatGPT- Data Analysis.png" alt="Google Analytics Individual Qualification">
-            </a>
-        </div>
-        <div class="certification">
-            <h3>Power BI Essential Training</h2>
-            <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Power%20BI%20Essential%20Training.pdf">
-                <img src="images/Power BI Essential Training.png" alt="Oracle Certified Associate, Java SE 8 Programmer">
-            </a>
-        </div>
+    </head>
+    <body>
+        <div class="grid-scrollable">
+            <div class="grid-container">
+                <div class="certification">
+                    <h3>SQL for Data Analysis</h3>
+                    <br>
+                    <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_SQL%20for%20Data%20Analysis.pdf">
+                        <img src="images/SQL for Data Analysis.png" alt="Google Analytics Individual Qualification">
+                    </a>
+                </div>
+                <div class="certification">
+                    <h3>Basics of Data Visualization Analysis</h3>
+                    <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Basics%20of%20Data%20Visualization%20Analysis%20(1).pdf">
+                        <img src="images/Basics of Data Visualization Analysis.png" alt="Certified Web Developer">
+                    </a>
+                </div>
+                <div class="certification">
+                    <h3>Data Analytics for Business Professionals</h3>
+                    <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Data%20Analytics%20for%20Business%20Professionals%20(1).pdf">
+                        <img src="images/Data Analytics for Business Professionals.png" alt="Microsoft Certified: Azure Fundamentals">
+                    </a>
+                </div>
+                <div class="certification">
+                    <h3>Excel and ChatGPT- Data Analysis</h3>
+                    <br>
+                    <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Excel%20and%20ChatGPT%20Data%20Analysis%20Power%20Tips.pdf">
+                        <img src="images/Excel and ChatGPT- Data Analysis.png" alt="Google Analytics Individual Qualification">
+                    </a>
+                </div>
+                <div class="certification">
+                    <h3>Power BI Essential Training</h3>
+                    <a href="https://github.com/Sammylayo/Certification.github.io/blob/main/CertificateOfCompletion_Power%20BI%20Essential%20Training.pdf">
+                        <img src="images/Power BI Essential Training.png" alt="Oracle Certified Associate, Java SE 8 Programmer">
+                    </a>
+                </div>
     </div>
 </body>
 </html>
